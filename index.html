@@ -7,6 +7,8 @@
     <title>Portfolio Sample</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 </head>
 <body>
 
@@ -28,16 +30,27 @@
   <div class="hero">
     <div class="hero__content">
       <h1 class="hero__title text-1">Title Portfolio</h1>
-      <a href="" class="button">Discover More</a>
+      <a href="" class="button">Discover More<span class="arrow-right"></span></a>
     </div>
   </div>
 
-  <div class="content">
+  <div class="content mt-1">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-  <div class="cover">
+  <div class="poster mt-1">
+    <div class="poster__img">
+      <img src="assets/rails.jpg" alt="">
+    </div>
+    <div class="poster__content">
+      <h3 class="text-1">Titolo Poster</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, eveniet repudiandae, facilis accusamus voluptas deleniti id laudantium iusto, dolorem fuga soluta consectetur eaque eos molestias dolore tempore laboriosam ut fugiat.</p>
+      <a href="" class="button">Call to action<span class="arrow-right"></span></a>
+    </div>
+  </div>
+
+  <div class="cover mt-1">
     <h2 class="cover__text">Cover</h2>
   </div>
 
@@ -56,18 +69,37 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-  <div class="grid">
-    <div class="col-33">
-      <h2>Lorem title third level</h2>
-    </div>
-    <div class="col-33">
-      <p>Lorem title third level</p>
-    </div>
-    <div class="col-33">
-      <p>Lorem title third level</p>
+  <div class="main-carousel" data-flickity='{ "cellAlign": "left", "pageDots": false, "contain": true, "wrapAround": true }'>
+    <div class="carousel-cell">Text</div>
+    <div class="carousel-cell">Text</div>
+    <div class="carousel-cell">Text</div>
+    <div class="carousel-cell">Text</div>
+  </div>
+
+  <div class="panel-info">
+    <div class="grid">
+      <div class="col panel-info__dots">
+        <div class="dot">text</div>
+        <div class="dot">text</div>
+        <div class="dot">text</div>
+        <div class="dot">text</div>
+      </div>
+      <div class="col panel-info__text">
+        <div class="grid">
+          <div class="col">
+            <h3 class="text-1">Subtitle</h3>
+          </div>
+          <div class="col mt-1">
+            <p class="tw">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+
   <script src="script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </body>
 </html>
