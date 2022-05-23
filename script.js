@@ -12,3 +12,19 @@ window.addEventListener('scroll', function() {
     }
 });
 
+ScrollReveal().reveal('.reveal', { 
+    delay: 500,
+    distance: '80px',
+    duration: 1500,
+    easing: 'cubic-bezier(.215, .61, .355, 1)',
+    interval: 500
+});
+
+ScrollReveal().reveal('.reveal--zoom', { 
+    delay: 500,
+    duration: 1500,
+    easing: 'cubic-bezier(.215, .61, .355, 1)',
+    interval: 200,
+    scale: 0.5,
+    mobile: false
+});
